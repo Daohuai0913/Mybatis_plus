@@ -21,6 +21,8 @@ public class Main {
                     break;
                 case 2:
                     System.out.println("普通用户登录");
+                    UserService userService = new UserService();
+                    userService.mainMenu();
                     break;
                 case 3:
                     System.out.println("退出");

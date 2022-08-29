@@ -64,22 +64,22 @@ class MybatisPlusApplicationTests {
 //        List<User> users = userDao.selectList(qw);
 //        System.out.println(users);
 
-        LambdaQueryWrapper<User> lqw = new LambdaQueryWrapper<>();
-//        等同于 =
-        lqw.eq(User::getAge, 21).select(User::getName, User::getAge);
-        List<Map<String,Object>> users = userDao.selectMaps(lqw);
-        System.out.println(users);
+//        LambdaQueryWrapper<User> lqw = new LambdaQueryWrapper<>();
+////        等同于 =
+//        lqw.eq(User::getAge, 21).select(User::getName, User::getAge);
+//        List<Map<String,Object>> users = userDao.selectMaps(lqw);
+//        System.out.println(users);
 
     }
 
     @Test
     void testInsert() {
-        User user = new User();
-        user.setAge(21);
-        user.setName("huai");
-        user.setPassword("123");
-        user.setTel("123456789");
-        userDao.insert(user);
+//        User user = new User();
+//        user.setAge(21);
+//        user.setName("huai");
+//        user.setPassword("123");
+//        user.setTel("123456789");
+//        userDao.insert(user);
     }
 
     @Test
@@ -106,11 +106,11 @@ class MybatisPlusApplicationTests {
 
     @Test
     public void testUpdate() {
-        User user = new User();
-        user.setName("Tom666");
-        user.setId(1L);
-
-        userDao.updateById(user);
+//        User user = new User();
+//        user.setName("Tom666");
+//        user.setId(1L);
+//
+//        userDao.updateById(user);
     }
 
     @Test
@@ -121,13 +121,13 @@ class MybatisPlusApplicationTests {
 //        <plugin type="com.baomidou.mybatisplus.extension.plugins.pagination.PageInterceptor"/>
 //        类似aop
 
-        IPage page = new Page(1, 2);
-        userDao.selectPage(page, null);
-        System.out.println(page.getCurrent() + "当前页面值");
-        System.out.println(page.getSize() + "每页显示的条数");
-        System.out.println(page.getTotal() + "总条数");
-        System.out.println(page.getPages() + "总页数");
-        System.out.println(page.getRecords() + "当前页面的数据");
+//        IPage page = new Page(1, 2);
+//        userDao.selectPage(page, null);
+//        System.out.println(page.getCurrent() + "当前页面值");
+//        System.out.println(page.getSize() + "每页显示的条数");
+//        System.out.println(page.getTotal() + "总条数");
+//        System.out.println(page.getPages() + "总页数");
+//        System.out.println(page.getRecords() + "当前页面的数据");
     }
 
 }

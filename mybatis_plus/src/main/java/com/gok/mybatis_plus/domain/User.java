@@ -10,11 +10,12 @@ import lombok.*;
 @AllArgsConstructor
 @NoArgsConstructor
 public class User {
-    private Long id;
-    private String name;
+    private long userId;
+    private String username;
     private String password;
-    private Integer age;
-    private String tel;
 
-
+    public User(String username, String password) {
+        this.username = username;
+        this.password = password;
+    }
 }
